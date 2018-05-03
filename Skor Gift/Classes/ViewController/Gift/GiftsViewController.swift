@@ -39,7 +39,8 @@ class GiftsViewController: UIViewController, UITableViewDataSource, UITableViewD
         } else if indexPath.row == 1 {
             
         } else if indexPath.row == 2 {
-            
+            let vc = VouchersViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
         } else if indexPath.row == 3 {
             
         }

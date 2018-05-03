@@ -17,6 +17,8 @@
 		E01DD9632099AA60001C9116 /* Skor_GiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01DD9622099AA60001C9116 /* Skor_GiftUITests.swift */; };
 		E0323947209AB1350065CE9B /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0323946209AB1350065CE9B /* OnBoardingViewController.swift */; };
 		E0323949209AB13F0065CE9B /* OnBoardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0323948209AB13F0065CE9B /* OnBoardingViewController.xib */; };
+		E0890E00209AE74B00DBB4FF /* VoucherListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0890DFE209AE74B00DBB4FF /* VoucherListTableViewCell.swift */; };
+		E0890E01209AE74B00DBB4FF /* VoucherListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0890DFF209AE74B00DBB4FF /* VoucherListTableViewCell.xib */; };
 		E0A4FB78209AC0A000AB45EB /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A4FB76209AC0A000AB45EB /* AccountViewController.swift */; };
 		E0A4FB79209AC0A000AB45EB /* AccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0A4FB77209AC0A000AB45EB /* AccountViewController.xib */; };
 		E0A4FB7E209AC32C00AB45EB /* InterfaceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A4FB7D209AC32C00AB45EB /* InterfaceManager.swift */; };
@@ -37,7 +39,6 @@
 		E0F4A9602099C23500B8C102 /* VouchersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F4A95F2099C23500B8C102 /* VouchersViewController.swift */; };
 		E0F4A9622099C24800B8C102 /* VoucherDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F4A9612099C24800B8C102 /* VoucherDetailViewController.swift */; };
 		E0F4A9642099C25700B8C102 /* VoucherDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0F4A9632099C25700B8C102 /* VoucherDetailViewController.xib */; };
-		E0F4A9672099C28200B8C102 /* VoucherListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F4A9662099C28200B8C102 /* VoucherListTableViewCell.swift */; };
 		E0F4A96B2099C2ED00B8C102 /* GiftsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F4A96A2099C2ED00B8C102 /* GiftsViewController.swift */; };
 		E0F4A96D2099C2F700B8C102 /* GiftsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0F4A96C2099C2F700B8C102 /* GiftsViewController.xib */; };
 		E0F4A96F2099C30400B8C102 /* SendGiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F4A96E2099C30400B8C102 /* SendGiftViewController.swift */; };
@@ -88,6 +89,8 @@
 		E01DD9642099AA60001C9116 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E0323946209AB1350065CE9B /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
 		E0323948209AB13F0065CE9B /* OnBoardingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnBoardingViewController.xib; sourceTree = "<group>"; };
+		E0890DFE209AE74B00DBB4FF /* VoucherListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoucherListTableViewCell.swift; sourceTree = "<group>"; };
+		E0890DFF209AE74B00DBB4FF /* VoucherListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VoucherListTableViewCell.xib; sourceTree = "<group>"; };
 		E0A4FB76209AC0A000AB45EB /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		E0A4FB77209AC0A000AB45EB /* AccountViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountViewController.xib; sourceTree = "<group>"; };
 		E0A4FB7D209AC32C00AB45EB /* InterfaceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterfaceManager.swift; sourceTree = "<group>"; };
@@ -109,7 +112,6 @@
 		E0F4A95F2099C23500B8C102 /* VouchersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VouchersViewController.swift; sourceTree = "<group>"; };
 		E0F4A9612099C24800B8C102 /* VoucherDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoucherDetailViewController.swift; sourceTree = "<group>"; };
 		E0F4A9632099C25700B8C102 /* VoucherDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VoucherDetailViewController.xib; sourceTree = "<group>"; };
-		E0F4A9662099C28200B8C102 /* VoucherListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoucherListTableViewCell.swift; sourceTree = "<group>"; };
 		E0F4A96A2099C2ED00B8C102 /* GiftsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftsViewController.swift; sourceTree = "<group>"; };
 		E0F4A96C2099C2F700B8C102 /* GiftsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GiftsViewController.xib; sourceTree = "<group>"; };
 		E0F4A96E2099C30400B8C102 /* SendGiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendGiftViewController.swift; sourceTree = "<group>"; };
@@ -369,9 +371,10 @@
 		E0F4A9652099C26100B8C102 /* CustomCell */ = {
 			isa = PBXGroup;
 			children = (
-				E0F4A9662099C28200B8C102 /* VoucherListTableViewCell.swift */,
 				E0A4FB86209AD30B00AB45EB /* GiftDiscountTableViewCell.swift */,
 				E0A4FB87209AD30B00AB45EB /* GiftDiscountTableViewCell.xib */,
+				E0890DFE209AE74B00DBB4FF /* VoucherListTableViewCell.swift */,
+				E0890DFF209AE74B00DBB4FF /* VoucherListTableViewCell.xib */,
 			);
 			path = CustomCell;
 			sourceTree = "<group>";
@@ -490,6 +493,7 @@
 				E0F4A97D2099C3A200B8C102 /* CustomCameraViewController.xib in Resources */,
 				E0F4A94E2099BB5B00B8C102 /* SignInViewController.xib in Resources */,
 				E0F4A9712099C30E00B8C102 /* SendGiftViewController.xib in Resources */,
+				E0890E01209AE74B00DBB4FF /* VoucherListTableViewCell.xib in Resources */,
 				E0F4A95E2099C22300B8C102 /* VouchersViewController.xib in Resources */,
 				E0F4A9752099C32900B8C102 /* DiscountsViewController.xib in Resources */,
 				E0F4A9642099C25700B8C102 /* VoucherDetailViewController.xib in Resources */,
@@ -572,7 +576,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0F4A9672099C28200B8C102 /* VoucherListTableViewCell.swift in Sources */,
 				E0A4FB84209ACB5D00AB45EB /* TransferViewController.swift in Sources */,
 				E0F4A9792099C36800B8C102 /* PointsViewController.swift in Sources */,
 				E0F4A9732099C31F00B8C102 /* DiscountsViewController.swift in Sources */,
@@ -585,6 +588,7 @@
 				E0A4FB78209AC0A000AB45EB /* AccountViewController.swift in Sources */,
 				E0F4A9602099C23500B8C102 /* VouchersViewController.swift in Sources */,
 				E0F4A96F2099C30400B8C102 /* SendGiftViewController.swift in Sources */,
+				E0890E00209AE74B00DBB4FF /* VoucherListTableViewCell.swift in Sources */,
 				E0A4FB7E209AC32C00AB45EB /* InterfaceManager.swift in Sources */,
 				E0F4A96B2099C2ED00B8C102 /* GiftsViewController.swift in Sources */,
 				E0F4A97F2099C3BC00B8C102 /* SendGiftResultViewController.swift in Sources */,

@@ -6,4 +6,15 @@
 //  Copyright © 2018 Skor. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class SendGiftResultViewController: UIViewController {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
+    @IBAction func doneButtonTapped(_ sender: Any) {
+        self.navigationController?.popToRootViewController(animated: true)
+    }
+}
