@@ -23,6 +23,8 @@
 		E0A4FB81209AC6DC00AB45EB /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A4FB80209AC6DC00AB45EB /* UIColorExtension.swift */; };
 		E0A4FB84209ACB5D00AB45EB /* TransferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A4FB82209ACB5D00AB45EB /* TransferViewController.swift */; };
 		E0A4FB85209ACB5D00AB45EB /* TransferViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0A4FB83209ACB5D00AB45EB /* TransferViewController.xib */; };
+		E0A4FB88209AD30B00AB45EB /* GiftDiscountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A4FB86209AD30B00AB45EB /* GiftDiscountTableViewCell.swift */; };
+		E0A4FB89209AD30B00AB45EB /* GiftDiscountTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0A4FB87209AD30B00AB45EB /* GiftDiscountTableViewCell.xib */; };
 		E0F4A9462099BB0800B8C102 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F4A9452099BB0800B8C102 /* SignUpViewController.swift */; };
 		E0F4A9482099BB1A00B8C102 /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0F4A9472099BB1A00B8C102 /* SignUpViewController.xib */; };
 		E0F4A94C2099BB3E00B8C102 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F4A94B2099BB3E00B8C102 /* SignInViewController.swift */; };
@@ -36,7 +38,6 @@
 		E0F4A9622099C24800B8C102 /* VoucherDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F4A9612099C24800B8C102 /* VoucherDetailViewController.swift */; };
 		E0F4A9642099C25700B8C102 /* VoucherDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0F4A9632099C25700B8C102 /* VoucherDetailViewController.xib */; };
 		E0F4A9672099C28200B8C102 /* VoucherListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F4A9662099C28200B8C102 /* VoucherListTableViewCell.swift */; };
-		E0F4A9692099C29E00B8C102 /* GiftListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F4A9682099C29E00B8C102 /* GiftListTableViewCell.swift */; };
 		E0F4A96B2099C2ED00B8C102 /* GiftsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F4A96A2099C2ED00B8C102 /* GiftsViewController.swift */; };
 		E0F4A96D2099C2F700B8C102 /* GiftsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0F4A96C2099C2F700B8C102 /* GiftsViewController.xib */; };
 		E0F4A96F2099C30400B8C102 /* SendGiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F4A96E2099C30400B8C102 /* SendGiftViewController.swift */; };
@@ -93,6 +94,8 @@
 		E0A4FB80209AC6DC00AB45EB /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		E0A4FB82209ACB5D00AB45EB /* TransferViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferViewController.swift; sourceTree = "<group>"; };
 		E0A4FB83209ACB5D00AB45EB /* TransferViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransferViewController.xib; sourceTree = "<group>"; };
+		E0A4FB86209AD30B00AB45EB /* GiftDiscountTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftDiscountTableViewCell.swift; sourceTree = "<group>"; };
+		E0A4FB87209AD30B00AB45EB /* GiftDiscountTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GiftDiscountTableViewCell.xib; sourceTree = "<group>"; };
 		E0F4A93C2099B8F800B8C102 /* Skor Gift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Skor Gift-Bridging-Header.h"; sourceTree = "<group>"; };
 		E0F4A9452099BB0800B8C102 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		E0F4A9472099BB1A00B8C102 /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
@@ -107,7 +110,6 @@
 		E0F4A9612099C24800B8C102 /* VoucherDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoucherDetailViewController.swift; sourceTree = "<group>"; };
 		E0F4A9632099C25700B8C102 /* VoucherDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VoucherDetailViewController.xib; sourceTree = "<group>"; };
 		E0F4A9662099C28200B8C102 /* VoucherListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoucherListTableViewCell.swift; sourceTree = "<group>"; };
-		E0F4A9682099C29E00B8C102 /* GiftListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftListTableViewCell.swift; sourceTree = "<group>"; };
 		E0F4A96A2099C2ED00B8C102 /* GiftsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftsViewController.swift; sourceTree = "<group>"; };
 		E0F4A96C2099C2F700B8C102 /* GiftsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GiftsViewController.xib; sourceTree = "<group>"; };
 		E0F4A96E2099C30400B8C102 /* SendGiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendGiftViewController.swift; sourceTree = "<group>"; };
@@ -368,7 +370,8 @@
 			isa = PBXGroup;
 			children = (
 				E0F4A9662099C28200B8C102 /* VoucherListTableViewCell.swift */,
-				E0F4A9682099C29E00B8C102 /* GiftListTableViewCell.swift */,
+				E0A4FB86209AD30B00AB45EB /* GiftDiscountTableViewCell.swift */,
+				E0A4FB87209AD30B00AB45EB /* GiftDiscountTableViewCell.xib */,
 			);
 			path = CustomCell;
 			sourceTree = "<group>";
@@ -496,6 +499,7 @@
 				E01DD94A2099AA60001C9116 /* Assets.xcassets in Resources */,
 				E0F4A9482099BB1A00B8C102 /* SignUpViewController.xib in Resources */,
 				E0F4A9582099BBD900B8C102 /* HomeViewController.xib in Resources */,
+				E0A4FB89209AD30B00AB45EB /* GiftDiscountTableViewCell.xib in Resources */,
 				E0F4A9812099C3C700B8C102 /* SendGiftResultViewController.xib in Resources */,
 				E01DD9482099AA60001C9116 /* Main.storyboard in Resources */,
 				E0F4A9772099C35900B8C102 /* PointsViewController.xib in Resources */,
@@ -573,7 +577,7 @@
 				E0F4A9792099C36800B8C102 /* PointsViewController.swift in Sources */,
 				E0F4A9732099C31F00B8C102 /* DiscountsViewController.swift in Sources */,
 				E0F4A97B2099C39600B8C102 /* CustomCameraViewController.swift in Sources */,
-				E0F4A9692099C29E00B8C102 /* GiftListTableViewCell.swift in Sources */,
+				E0A4FB88209AD30B00AB45EB /* GiftDiscountTableViewCell.swift in Sources */,
 				E0F4A94C2099BB3E00B8C102 /* SignInViewController.swift in Sources */,
 				E0F4A9462099BB0800B8C102 /* SignUpViewController.swift in Sources */,
 				E0A4FB81209AC6DC00AB45EB /* UIColorExtension.swift in Sources */,

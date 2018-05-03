@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DiscountsViewController" customModule="Skor_Gift" customModuleProvider="target">
             <connections>
+                <outlet property="tableView" destination="N9t-ra-F1v" id="94j-qW-1Qj"/>
                 <outlet property="view" destination="iN0-l3-epB" id="i6B-rY-GU0"/>
             </connections>
         </placeholder>
@@ -20,16 +21,24 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="discount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HPh-bo-WZF">
-                    <rect key="frame" x="129" y="254" width="66" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="N9t-ra-F1v">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="B8j-Ot-fE8"/>
+                        <outlet property="delegate" destination="-1" id="4kH-ae-8i3"/>
+                    </connections>
+                </tableView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="N9t-ra-F1v" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="W1s-ri-pIs"/>
+                <constraint firstItem="N9t-ra-F1v" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="bIg-WC-7lm"/>
+                <constraint firstItem="N9t-ra-F1v" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ytV-Op-EOf"/>
+                <constraint firstItem="N9t-ra-F1v" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="zRH-ia-Qxz"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="45.5" y="162.5"/>
         </view>
     </objects>
 </document>
