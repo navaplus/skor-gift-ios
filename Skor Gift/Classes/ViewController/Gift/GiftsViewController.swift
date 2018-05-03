@@ -6,4 +6,11 @@
 //  Copyright © 2018 Skor. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class GiftsViewController: UIViewController {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+}

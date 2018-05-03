@@ -17,6 +17,12 @@
 		E01DD9632099AA60001C9116 /* Skor_GiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01DD9622099AA60001C9116 /* Skor_GiftUITests.swift */; };
 		E0323947209AB1350065CE9B /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0323946209AB1350065CE9B /* OnBoardingViewController.swift */; };
 		E0323949209AB13F0065CE9B /* OnBoardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0323948209AB13F0065CE9B /* OnBoardingViewController.xib */; };
+		E0A4FB78209AC0A000AB45EB /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A4FB76209AC0A000AB45EB /* AccountViewController.swift */; };
+		E0A4FB79209AC0A000AB45EB /* AccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0A4FB77209AC0A000AB45EB /* AccountViewController.xib */; };
+		E0A4FB7E209AC32C00AB45EB /* InterfaceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A4FB7D209AC32C00AB45EB /* InterfaceManager.swift */; };
+		E0A4FB81209AC6DC00AB45EB /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A4FB80209AC6DC00AB45EB /* UIColorExtension.swift */; };
+		E0A4FB84209ACB5D00AB45EB /* TransferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A4FB82209ACB5D00AB45EB /* TransferViewController.swift */; };
+		E0A4FB85209ACB5D00AB45EB /* TransferViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0A4FB83209ACB5D00AB45EB /* TransferViewController.xib */; };
 		E0F4A9462099BB0800B8C102 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F4A9452099BB0800B8C102 /* SignUpViewController.swift */; };
 		E0F4A9482099BB1A00B8C102 /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0F4A9472099BB1A00B8C102 /* SignUpViewController.xib */; };
 		E0F4A94C2099BB3E00B8C102 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F4A94B2099BB3E00B8C102 /* SignInViewController.swift */; };
@@ -81,6 +87,12 @@
 		E01DD9642099AA60001C9116 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E0323946209AB1350065CE9B /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
 		E0323948209AB13F0065CE9B /* OnBoardingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnBoardingViewController.xib; sourceTree = "<group>"; };
+		E0A4FB76209AC0A000AB45EB /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		E0A4FB77209AC0A000AB45EB /* AccountViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountViewController.xib; sourceTree = "<group>"; };
+		E0A4FB7D209AC32C00AB45EB /* InterfaceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterfaceManager.swift; sourceTree = "<group>"; };
+		E0A4FB80209AC6DC00AB45EB /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		E0A4FB82209ACB5D00AB45EB /* TransferViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferViewController.swift; sourceTree = "<group>"; };
+		E0A4FB83209ACB5D00AB45EB /* TransferViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransferViewController.xib; sourceTree = "<group>"; };
 		E0F4A93C2099B8F800B8C102 /* Skor Gift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Skor Gift-Bridging-Header.h"; sourceTree = "<group>"; };
 		E0F4A9452099BB0800B8C102 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		E0F4A9472099BB1A00B8C102 /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
@@ -178,14 +190,8 @@
 		E01DD9412099AA60001C9116 /* Skor Gift */ = {
 			isa = PBXGroup;
 			children = (
-				E0F4A9652099C26100B8C102 /* CustomCell */,
-				E0F4A93B2099B8C900B8C102 /* HeaderBridge */,
-				E0F4A93A2099B8A700B8C102 /* ViewController */,
-				E01DD9422099AA60001C9116 /* AppDelegate.swift */,
-				E01DD9442099AA60001C9116 /* ViewController.swift */,
-				E01DD9462099AA60001C9116 /* Main.storyboard */,
+				E0A4FB7A209AC2C600AB45EB /* Classes */,
 				E01DD9492099AA60001C9116 /* Assets.xcassets */,
-				E01DD94B2099AA60001C9116 /* LaunchScreen.storyboard */,
 				E01DD94E2099AA60001C9116 /* Info.plist */,
 			);
 			path = "Skor Gift";
@@ -218,6 +224,46 @@
 			path = OnBoarding;
 			sourceTree = "<group>";
 		};
+		E0A4FB7A209AC2C600AB45EB /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E0A4FB7F209AC6CC00AB45EB /* Extension */,
+				E0A4FB7B209AC2FB00AB45EB /* Singleton */,
+				E0F4A9652099C26100B8C102 /* CustomCell */,
+				E0F4A93A2099B8A700B8C102 /* ViewController */,
+				E01DD9422099AA60001C9116 /* AppDelegate.swift */,
+				E01DD9442099AA60001C9116 /* ViewController.swift */,
+				E01DD9462099AA60001C9116 /* Main.storyboard */,
+				E01DD94B2099AA60001C9116 /* LaunchScreen.storyboard */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		E0A4FB7B209AC2FB00AB45EB /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				E0A4FB7C209AC30E00AB45EB /* Managers */,
+				E0F4A93B2099B8C900B8C102 /* HeaderBridge */,
+			);
+			path = Singleton;
+			sourceTree = "<group>";
+		};
+		E0A4FB7C209AC30E00AB45EB /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				E0A4FB7D209AC32C00AB45EB /* InterfaceManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		E0A4FB7F209AC6CC00AB45EB /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E0A4FB80209AC6DC00AB45EB /* UIColorExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		E0F4A93A2099B8A700B8C102 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -248,6 +294,8 @@
 				E0F4A9472099BB1A00B8C102 /* SignUpViewController.xib */,
 				E0F4A94B2099BB3E00B8C102 /* SignInViewController.swift */,
 				E0F4A94D2099BB5B00B8C102 /* SignInViewController.xib */,
+				E0A4FB76209AC0A000AB45EB /* AccountViewController.swift */,
+				E0A4FB77209AC0A000AB45EB /* AccountViewController.xib */,
 			);
 			path = Account;
 			sourceTree = "<group>";
@@ -299,6 +347,8 @@
 			children = (
 				E0F4A9782099C36800B8C102 /* PointsViewController.swift */,
 				E0F4A9762099C35900B8C102 /* PointsViewController.xib */,
+				E0A4FB82209ACB5D00AB45EB /* TransferViewController.swift */,
+				E0A4FB83209ACB5D00AB45EB /* TransferViewController.xib */,
 			);
 			path = Points;
 			sourceTree = "<group>";
@@ -433,6 +483,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0A4FB79209AC0A000AB45EB /* AccountViewController.xib in Resources */,
 				E0F4A97D2099C3A200B8C102 /* CustomCameraViewController.xib in Resources */,
 				E0F4A94E2099BB5B00B8C102 /* SignInViewController.xib in Resources */,
 				E0F4A9712099C30E00B8C102 /* SendGiftViewController.xib in Resources */,
@@ -449,6 +500,7 @@
 				E01DD9482099AA60001C9116 /* Main.storyboard in Resources */,
 				E0F4A9772099C35900B8C102 /* PointsViewController.xib in Resources */,
 				E0323949209AB13F0065CE9B /* OnBoardingViewController.xib in Resources */,
+				E0A4FB85209ACB5D00AB45EB /* TransferViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,11 +548,13 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Skor Gift/Pods-Skor Gift-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/EAIntroView/EAIntroView.framework",
 				"${BUILT_PRODUCTS_DIR}/EARestrictedScrollView/EARestrictedScrollView.framework",
+				"${BUILT_PRODUCTS_DIR}/PagingMenuController/PagingMenuController.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EAIntroView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EARestrictedScrollView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PagingMenuController.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -515,15 +569,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0F4A9672099C28200B8C102 /* VoucherListTableViewCell.swift in Sources */,
+				E0A4FB84209ACB5D00AB45EB /* TransferViewController.swift in Sources */,
 				E0F4A9792099C36800B8C102 /* PointsViewController.swift in Sources */,
 				E0F4A9732099C31F00B8C102 /* DiscountsViewController.swift in Sources */,
 				E0F4A97B2099C39600B8C102 /* CustomCameraViewController.swift in Sources */,
 				E0F4A9692099C29E00B8C102 /* GiftListTableViewCell.swift in Sources */,
 				E0F4A94C2099BB3E00B8C102 /* SignInViewController.swift in Sources */,
 				E0F4A9462099BB0800B8C102 /* SignUpViewController.swift in Sources */,
+				E0A4FB81209AC6DC00AB45EB /* UIColorExtension.swift in Sources */,
 				E01DD9452099AA60001C9116 /* ViewController.swift in Sources */,
+				E0A4FB78209AC0A000AB45EB /* AccountViewController.swift in Sources */,
 				E0F4A9602099C23500B8C102 /* VouchersViewController.swift in Sources */,
 				E0F4A96F2099C30400B8C102 /* SendGiftViewController.swift in Sources */,
+				E0A4FB7E209AC32C00AB45EB /* InterfaceManager.swift in Sources */,
 				E0F4A96B2099C2ED00B8C102 /* GiftsViewController.swift in Sources */,
 				E0F4A97F2099C3BC00B8C102 /* SendGiftResultViewController.swift in Sources */,
 				E01DD9432099AA60001C9116 /* AppDelegate.swift in Sources */,
@@ -704,7 +762,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.skor.gift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Skor Gift/HeaderBridge/Skor Gift-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Skor Gift/Classes/Singleton/HeaderBridge/Skor Gift-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -723,7 +781,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.skor.gift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Skor Gift/HeaderBridge/Skor Gift-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Skor Gift/Classes/Singleton/HeaderBridge/Skor Gift-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
