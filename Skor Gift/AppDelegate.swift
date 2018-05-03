@@ -12,11 +12,29 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var mainNavigationController:UINavigationController?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        pushOnBoardingVC()
+        
         return true
+    }
+    
+    func pushOnBoardingVC(){
+        self.window?.makeKeyAndVisible()
+        
+        var vc  = OnBoardingViewController()
+        
+        let navigationController = UINavigationController(rootViewController: vc)
+        navigationController.isNavigationBarHidden = true
+        navigationController.navigationBar.shadowImage = nil
+        navigationController.navigationBar.isTranslucent = true
+        
+        mainNavigationController = navigationController
+        self.window?.rootViewController = mainNavigationController
+        self.window?.backgroundColor = UIColor.white
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
