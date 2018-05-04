@@ -8,6 +8,7 @@ target 'Skor Gift' do
   # Pods for Skor Gift
 pod 'EAIntroView', '~> 2.10.0'
 pod 'PagingMenuController'
+pod 'SnapKit', '~> 4.0.0'
 
 post_install do |installer|
     installer.pods_project.targets.each do |target|
