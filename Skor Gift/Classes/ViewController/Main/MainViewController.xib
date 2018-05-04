@@ -9,9 +9,18 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="Skor_Gift" customModuleProvider="target">
             <connections>
+                <outlet property="buttonAccount" destination="2vl-t2-woZ" id="OAi-Ul-RDy"/>
+                <outlet property="buttonDiscount" destination="QI0-wk-VcR" id="lmI-Vr-Gam"/>
+                <outlet property="buttonGifts" destination="fGl-M7-FfV" id="ehL-Hf-dpJ"/>
+                <outlet property="buttonHome" destination="nzf-kj-Bgj" id="agj-Oe-KF9"/>
                 <outlet property="containerView" destination="yBf-pk-PuB" id="8SA-Yd-luq"/>
                 <outlet property="view" destination="iN0-l3-epB" id="Xi9-R0-ipP"/>
             </connections>
@@ -22,64 +31,98 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7sY-6V-F27">
-                    <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                    <rect key="frame" x="0.0" y="20" width="375" height="50"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="logo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EVO-n0-k58">
-                            <rect key="frame" x="166" y="11" width="42" height="21"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="nuG-6r-XIF">
+                            <rect key="frame" x="125" y="9.5" width="124" height="25"/>
+                        </imageView>
                     </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="44" id="7AN-MQ-tWw"/>
+                        <constraint firstAttribute="height" constant="50" id="7AN-MQ-tWw"/>
+                        <constraint firstItem="nuG-6r-XIF" firstAttribute="centerX" secondItem="7sY-6V-F27" secondAttribute="centerX" id="FhH-Fu-bOV"/>
+                        <constraint firstItem="nuG-6r-XIF" firstAttribute="centerY" secondItem="7sY-6V-F27" secondAttribute="centerY" constant="-3" id="Xau-qJ-CmP"/>
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0gZ-6n-AfB">
-                    <rect key="frame" x="0.0" y="64" width="375" height="80"/>
+                    <rect key="frame" x="0.0" y="70" width="375" height="55"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nzf-kj-Bgj">
-                            <rect key="frame" x="0.0" y="0.0" width="94" height="80"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <state key="normal" title="home"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nzf-kj-Bgj">
+                            <rect key="frame" x="0.0" y="0.0" width="94" height="55"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="94" id="5ht-xo-wwe"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="10"/>
+                            <state key="normal" title="Home" image="home_off">
+                                <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
                             <connections>
                                 <action selector="homeButtonTapped:" destination="-1" eventType="touchUpInside" id="aTh-87-umD"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fGl-M7-FfV">
-                            <rect key="frame" x="94" y="0.0" width="94" height="80"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <state key="normal" title="gifts"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fGl-M7-FfV">
+                            <rect key="frame" x="94" y="0.0" width="94" height="55"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="94" id="310-Lz-XMD"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="10"/>
+                            <state key="normal" title="Gifts" image="gifts_off">
+                                <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
                             <connections>
                                 <action selector="giftButtonTapped:" destination="-1" eventType="touchUpInside" id="K1g-xf-OXN"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QI0-wk-VcR">
-                            <rect key="frame" x="188" y="0.0" width="94" height="80"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <state key="normal" title="discount"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QI0-wk-VcR">
+                            <rect key="frame" x="188" y="0.0" width="94" height="55"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="94" id="1lk-X1-quy"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="10"/>
+                            <state key="normal" title="Discount" image="discounts_off">
+                                <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
                             <connections>
                                 <action selector="discountButtonTapped:" destination="-1" eventType="touchUpInside" id="i92-4u-GVH"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2vl-t2-woZ">
-                            <rect key="frame" x="281" y="0.0" width="94" height="80"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <state key="normal" title="account"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2vl-t2-woZ">
+                            <rect key="frame" x="282" y="0.0" width="94" height="55"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="94" id="0uF-nn-jas"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="10"/>
+                            <state key="normal" title="Account" image="account_off">
+                                <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
                             <connections>
                                 <action selector="accountButtonTapped:" destination="-1" eventType="touchUpInside" id="VHu-tX-n2q"/>
                             </connections>
                         </button>
                     </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="80" id="6M3-Lp-yN9"/>
+                        <constraint firstItem="fGl-M7-FfV" firstAttribute="top" secondItem="0gZ-6n-AfB" secondAttribute="top" id="2T5-Xf-uEl"/>
+                        <constraint firstAttribute="height" constant="55" id="6M3-Lp-yN9"/>
+                        <constraint firstItem="nzf-kj-Bgj" firstAttribute="leading" secondItem="0gZ-6n-AfB" secondAttribute="leading" id="7Id-Yv-loJ"/>
+                        <constraint firstItem="2vl-t2-woZ" firstAttribute="leading" secondItem="QI0-wk-VcR" secondAttribute="trailing" id="8kB-ww-gvr"/>
+                        <constraint firstAttribute="bottom" secondItem="QI0-wk-VcR" secondAttribute="bottom" id="AF7-Av-L8j"/>
+                        <constraint firstItem="nzf-kj-Bgj" firstAttribute="top" secondItem="0gZ-6n-AfB" secondAttribute="top" id="BpK-z6-YkT"/>
+                        <constraint firstItem="QI0-wk-VcR" firstAttribute="width" secondItem="fGl-M7-FfV" secondAttribute="width" id="FLk-uP-def"/>
+                        <constraint firstItem="QI0-wk-VcR" firstAttribute="top" secondItem="0gZ-6n-AfB" secondAttribute="top" id="KeV-dV-2nc"/>
+                        <constraint firstItem="2vl-t2-woZ" firstAttribute="top" secondItem="0gZ-6n-AfB" secondAttribute="top" id="P0J-cd-duY"/>
+                        <constraint firstAttribute="trailing" secondItem="2vl-t2-woZ" secondAttribute="trailing" constant="-1" id="gvK-fF-dIZ"/>
+                        <constraint firstAttribute="bottom" secondItem="2vl-t2-woZ" secondAttribute="bottom" id="lVV-GE-VZ8"/>
+                        <constraint firstItem="fGl-M7-FfV" firstAttribute="width" secondItem="nzf-kj-Bgj" secondAttribute="width" id="m9K-l0-c5f"/>
+                        <constraint firstItem="QI0-wk-VcR" firstAttribute="leading" secondItem="fGl-M7-FfV" secondAttribute="trailing" id="pjA-fl-xSc"/>
+                        <constraint firstItem="2vl-t2-woZ" firstAttribute="width" secondItem="QI0-wk-VcR" secondAttribute="width" id="rhO-fh-u5v"/>
+                        <constraint firstItem="fGl-M7-FfV" firstAttribute="leading" secondItem="nzf-kj-Bgj" secondAttribute="trailing" id="v4P-86-Koi"/>
+                        <constraint firstAttribute="bottom" secondItem="fGl-M7-FfV" secondAttribute="bottom" id="v7G-gL-SIf"/>
+                        <constraint firstAttribute="bottom" secondItem="nzf-kj-Bgj" secondAttribute="bottom" id="vb7-FT-WkW"/>
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bPe-YU-pQD">
-                    <rect key="frame" x="0.0" y="144" width="375" height="80"/>
+                    <rect key="frame" x="0.0" y="125" width="375" height="53"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xFO-qM-Egw">
                             <rect key="frame" x="0.0" y="0.0" width="94" height="80"/>
@@ -111,24 +154,24 @@
                             </connections>
                         </button>
                     </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="DiJ-sV-hfx"/>
-                        <constraint firstAttribute="height" constant="80" id="weH-N7-Dv7"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="DiJ-sV-hfx"/>
+                        <constraint firstAttribute="height" constant="53" id="weH-N7-Dv7"/>
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yBf-pk-PuB">
-                    <rect key="frame" x="0.0" y="224" width="375" height="443"/>
+                    <rect key="frame" x="0.0" y="179" width="375" height="488"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </view>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="0.94509803921568625" green="0.94509803921568625" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="yBf-pk-PuB" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="2P3-qz-D7K"/>
                 <constraint firstItem="bPe-YU-pQD" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="7zz-XI-gyW"/>
                 <constraint firstItem="7sY-6V-F27" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Ecb-jK-1jA"/>
                 <constraint firstItem="7sY-6V-F27" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="LQi-Sf-3vA"/>
-                <constraint firstItem="yBf-pk-PuB" firstAttribute="top" secondItem="bPe-YU-pQD" secondAttribute="bottom" id="OgS-Q0-AjC"/>
+                <constraint firstItem="yBf-pk-PuB" firstAttribute="top" secondItem="bPe-YU-pQD" secondAttribute="bottom" constant="1" id="OgS-Q0-AjC"/>
                 <constraint firstItem="7sY-6V-F27" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="Orc-6Z-VYG"/>
                 <constraint firstItem="bPe-YU-pQD" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="kq5-0z-nfs"/>
                 <constraint firstItem="yBf-pk-PuB" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="l6D-g0-HPY"/>
@@ -142,4 +185,11 @@
             <point key="canvasLocation" x="33.5" y="54.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="account_off" width="26" height="26"/>
+        <image name="discounts_off" width="26" height="26"/>
+        <image name="gifts_off" width="26" height="26"/>
+        <image name="home_off" width="26" height="26"/>
+        <image name="logo" width="124" height="25"/>
+    </resources>
 </document>

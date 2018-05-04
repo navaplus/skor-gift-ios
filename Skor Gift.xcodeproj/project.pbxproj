@@ -17,6 +17,10 @@
 		E01DD9632099AA60001C9116 /* Skor_GiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01DD9622099AA60001C9116 /* Skor_GiftUITests.swift */; };
 		E0323947209AB1350065CE9B /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0323946209AB1350065CE9B /* OnBoardingViewController.swift */; };
 		E0323949209AB13F0065CE9B /* OnBoardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0323948209AB13F0065CE9B /* OnBoardingViewController.xib */; };
+		E0525585209C5B78003F15A4 /* IntroPage1.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0525584209C5B78003F15A4 /* IntroPage1.xib */; };
+		E0525587209C5D21003F15A4 /* IntroPage2.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0525586209C5D20003F15A4 /* IntroPage2.xib */; };
+		E0525589209C5D6F003F15A4 /* IntroPage3.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0525588209C5D6F003F15A4 /* IntroPage3.xib */; };
+		E052558B209C64AE003F15A4 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E052558A209C64AE003F15A4 /* UIButtonExtension.swift */; };
 		E0890E00209AE74B00DBB4FF /* VoucherListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0890DFE209AE74B00DBB4FF /* VoucherListTableViewCell.swift */; };
 		E0890E01209AE74B00DBB4FF /* VoucherListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0890DFF209AE74B00DBB4FF /* VoucherListTableViewCell.xib */; };
 		E0A4FB78209AC0A000AB45EB /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A4FB76209AC0A000AB45EB /* AccountViewController.swift */; };
@@ -89,6 +93,10 @@
 		E01DD9642099AA60001C9116 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E0323946209AB1350065CE9B /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
 		E0323948209AB13F0065CE9B /* OnBoardingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnBoardingViewController.xib; sourceTree = "<group>"; };
+		E0525584209C5B78003F15A4 /* IntroPage1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IntroPage1.xib; sourceTree = "<group>"; };
+		E0525586209C5D20003F15A4 /* IntroPage2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IntroPage2.xib; sourceTree = "<group>"; };
+		E0525588209C5D6F003F15A4 /* IntroPage3.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IntroPage3.xib; sourceTree = "<group>"; };
+		E052558A209C64AE003F15A4 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
 		E0890DFE209AE74B00DBB4FF /* VoucherListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoucherListTableViewCell.swift; sourceTree = "<group>"; };
 		E0890DFF209AE74B00DBB4FF /* VoucherListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VoucherListTableViewCell.xib; sourceTree = "<group>"; };
 		E0A4FB76209AC0A000AB45EB /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
@@ -224,6 +232,9 @@
 			children = (
 				E0323946209AB1350065CE9B /* OnBoardingViewController.swift */,
 				E0323948209AB13F0065CE9B /* OnBoardingViewController.xib */,
+				E0525584209C5B78003F15A4 /* IntroPage1.xib */,
+				E0525586209C5D20003F15A4 /* IntroPage2.xib */,
+				E0525588209C5D6F003F15A4 /* IntroPage3.xib */,
 			);
 			path = OnBoarding;
 			sourceTree = "<group>";
@@ -264,6 +275,7 @@
 			isa = PBXGroup;
 			children = (
 				E0A4FB80209AC6DC00AB45EB /* UIColorExtension.swift */,
+				E052558A209C64AE003F15A4 /* UIButtonExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -501,14 +513,17 @@
 				E0F4A96D2099C2F700B8C102 /* GiftsViewController.xib in Resources */,
 				E01DD94D2099AA60001C9116 /* LaunchScreen.storyboard in Resources */,
 				E01DD94A2099AA60001C9116 /* Assets.xcassets in Resources */,
+				E0525585209C5B78003F15A4 /* IntroPage1.xib in Resources */,
 				E0F4A9482099BB1A00B8C102 /* SignUpViewController.xib in Resources */,
 				E0F4A9582099BBD900B8C102 /* HomeViewController.xib in Resources */,
 				E0A4FB89209AD30B00AB45EB /* GiftDiscountTableViewCell.xib in Resources */,
 				E0F4A9812099C3C700B8C102 /* SendGiftResultViewController.xib in Resources */,
 				E01DD9482099AA60001C9116 /* Main.storyboard in Resources */,
+				E0525587209C5D21003F15A4 /* IntroPage2.xib in Resources */,
 				E0F4A9772099C35900B8C102 /* PointsViewController.xib in Resources */,
 				E0323949209AB13F0065CE9B /* OnBoardingViewController.xib in Resources */,
 				E0A4FB85209ACB5D00AB45EB /* TransferViewController.xib in Resources */,
+				E0525589209C5D6F003F15A4 /* IntroPage3.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -579,6 +594,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0A4FB84209ACB5D00AB45EB /* TransferViewController.swift in Sources */,
+				E052558B209C64AE003F15A4 /* UIButtonExtension.swift in Sources */,
 				E0F4A9792099C36800B8C102 /* PointsViewController.swift in Sources */,
 				E0F4A9732099C31F00B8C102 /* DiscountsViewController.swift in Sources */,
 				E0F4A97B2099C39600B8C102 /* CustomCameraViewController.swift in Sources */,

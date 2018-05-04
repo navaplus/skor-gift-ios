@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="t71-gQ-gaJ">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="6Oh-oz-ZU0">
+                    <rect key="frame" x="47.5" y="80" width="280" height="280"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="280" id="cKp-iz-dZX"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get exclusive member discounts at many merchants around you" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d72-WG-6FF">
+                    <rect key="frame" x="16" y="385.5" width="343" height="55"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="8s4-aN-Sek"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="qbR-lR-OK2" firstAttribute="trailing" secondItem="d72-WG-6FF" secondAttribute="trailing" constant="16" id="OIB-MV-5mF"/>
+                <constraint firstItem="d72-WG-6FF" firstAttribute="top" secondItem="6Oh-oz-ZU0" secondAttribute="bottom" constant="25" id="P0i-hh-Rch"/>
+                <constraint firstItem="d72-WG-6FF" firstAttribute="leading" secondItem="qbR-lR-OK2" secondAttribute="leading" constant="16" id="aDO-jI-Ca5"/>
+                <constraint firstItem="6Oh-oz-ZU0" firstAttribute="centerY" secondItem="qbR-lR-OK2" secondAttribute="centerY" constant="-123.5" id="fxi-E5-95v"/>
+                <constraint firstItem="6Oh-oz-ZU0" firstAttribute="centerX" secondItem="qbR-lR-OK2" secondAttribute="centerX" id="oJM-YH-fRL"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="qbR-lR-OK2"/>
+            <point key="canvasLocation" x="34.5" y="54.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="2" width="280" height="280"/>
+    </resources>
+</document>

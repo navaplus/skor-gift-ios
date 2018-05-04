@@ -10,6 +10,10 @@ import UIKit
 import PagingMenuController
 
 class MainViewController: UIViewController {
+    @IBOutlet var buttonHome: UIButton!
+    @IBOutlet var buttonGifts: UIButton!
+    @IBOutlet var buttonDiscount: UIButton!
+    @IBOutlet var buttonAccount: UIButton!
     
     var homeVC:HomeViewController = HomeViewController()
     var giftsVC:GiftsViewController = GiftsViewController()
@@ -22,8 +26,17 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setUI()
         setupPaging()
         getDataFromServer()
+    }
+    
+    func setUI() {
+        buttonHome.alignImageAndTitleVertically()
+        buttonGifts.alignImageAndTitleVertically()
+        buttonDiscount.alignImageAndTitleVertically()
+        buttonAccount.alignImageAndTitleVertically()
     }
     
     //MARK: - PagingMenuController
