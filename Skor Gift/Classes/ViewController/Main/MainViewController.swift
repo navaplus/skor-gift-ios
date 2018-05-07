@@ -10,10 +10,16 @@ import UIKit
 import PagingMenuController
 
 class MainViewController: UIViewController {
+    //up section
     @IBOutlet var buttonHome: UIButton!
     @IBOutlet var buttonGifts: UIButton!
     @IBOutlet var buttonDiscount: UIButton!
     @IBOutlet var buttonAccount: UIButton!
+    
+    //below section
+    @IBOutlet var buttonBuyPoints: UIButton!
+    @IBOutlet var buttonTransfer: UIButton!
+    @IBOutlet var buttonSendEGift: UIButton!
     
     var homeVC:HomeViewController = HomeViewController()
     var giftsVC:GiftsViewController = GiftsViewController()
@@ -37,6 +43,9 @@ class MainViewController: UIViewController {
         buttonGifts.alignImageAndTitleVertically()
         buttonDiscount.alignImageAndTitleVertically()
         buttonAccount.alignImageAndTitleVertically()
+        buttonBuyPoints.alignImageAndTitleVertically()
+        buttonTransfer.alignImageAndTitleVertically()
+        buttonSendEGift.alignImageAndTitleVertically()
     }
     
     //MARK: - PagingMenuController

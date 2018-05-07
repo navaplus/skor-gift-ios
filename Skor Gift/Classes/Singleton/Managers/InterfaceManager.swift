@@ -83,15 +83,12 @@ class InterfaceManager: NSObject {
         return colorWithHexString("#4AAB62")
     }
     
-    //TODO: update with this app's default font
     func boldFont()->UIFont{
-//        return UIFont(name: "Helvetica-Neue", size: 14)!
-        return UIFont.boldSystemFont(ofSize: 14)
+        return UIFont(name: "Roboto-Regular", size: 14)!
     }
 
     func regularFont()->UIFont{
-//        return UIFont(name: "Helvetica-Neue", size: 14)!
-        return UIFont.systemFont(ofSize: 14)
+        return UIFont(name: "Roboto-Regular", size: 14)!
     }
     
     func getColorOfTheDealPercentage(_ percentage:Int)->UIColor{

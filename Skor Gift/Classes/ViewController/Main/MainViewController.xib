@@ -10,17 +10,20 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="HelveticaNeue.ttc">
-            <string>HelveticaNeue</string>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
         </array>
     </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="Skor_Gift" customModuleProvider="target">
             <connections>
                 <outlet property="buttonAccount" destination="2vl-t2-woZ" id="OAi-Ul-RDy"/>
+                <outlet property="buttonBuyPoints" destination="7Hg-SQ-XVf" id="NmI-4a-MiX"/>
                 <outlet property="buttonDiscount" destination="QI0-wk-VcR" id="lmI-Vr-Gam"/>
                 <outlet property="buttonGifts" destination="fGl-M7-FfV" id="ehL-Hf-dpJ"/>
                 <outlet property="buttonHome" destination="nzf-kj-Bgj" id="agj-Oe-KF9"/>
+                <outlet property="buttonSendEGift" destination="x7i-EU-0Hl" id="l8Q-aq-emL"/>
+                <outlet property="buttonTransfer" destination="aHA-Vm-fiE" id="f3z-4h-VfU"/>
                 <outlet property="containerView" destination="yBf-pk-PuB" id="8SA-Yd-luq"/>
                 <outlet property="view" destination="iN0-l3-epB" id="Xi9-R0-ipP"/>
             </connections>
@@ -52,7 +55,7 @@
                             <constraints>
                                 <constraint firstAttribute="width" constant="94" id="5ht-xo-wwe"/>
                             </constraints>
-                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="10"/>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="10"/>
                             <state key="normal" title="Home" image="home_off">
                                 <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
@@ -65,7 +68,7 @@
                             <constraints>
                                 <constraint firstAttribute="width" constant="94" id="310-Lz-XMD"/>
                             </constraints>
-                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="10"/>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="10"/>
                             <state key="normal" title="Gifts" image="gifts_off">
                                 <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
@@ -78,7 +81,7 @@
                             <constraints>
                                 <constraint firstAttribute="width" constant="94" id="1lk-X1-quy"/>
                             </constraints>
-                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="10"/>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="10"/>
                             <state key="normal" title="Discount" image="discounts_off">
                                 <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
@@ -91,7 +94,7 @@
                             <constraints>
                                 <constraint firstAttribute="width" constant="94" id="0uF-nn-jas"/>
                             </constraints>
-                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="10"/>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="10"/>
                             <state key="normal" title="Account" image="account_off">
                                 <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
@@ -124,31 +127,79 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bPe-YU-pQD">
                     <rect key="frame" x="0.0" y="125" width="375" height="53"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xFO-qM-Egw">
-                            <rect key="frame" x="0.0" y="0.0" width="94" height="80"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <state key="normal" title="your points"/>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Hg-SQ-XVf">
-                            <rect key="frame" x="94" y="0.0" width="94" height="80"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <state key="normal" title="buy points"/>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ylf-Ok-eir">
+                            <rect key="frame" x="-1" y="0.0" width="127" height="53"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOUR POINTS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Hz-7v-EzM">
+                                    <rect key="frame" x="14" y="13" width="70" height="8"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="8" id="Jqw-7q-uat"/>
+                                        <constraint firstAttribute="width" constant="70" id="jUi-J9-oYp"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="10"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="trophy" translatesAutoresizingMaskIntoConstraints="NO" id="Uqz-ow-xYw">
+                                    <rect key="frame" x="17" y="29" width="16" height="13"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="13" id="AdD-th-rFc"/>
+                                        <constraint firstAttribute="width" constant="16" id="sUK-f5-6oo"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="200.000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Si6-Z0-f7X">
+                                    <rect key="frame" x="42" y="29" width="80" height="12"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="12" id="8EO-De-sdf"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.90980392160000001" green="0.29411764709999999" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="Si6-Z0-f7X" secondAttribute="trailing" constant="5" id="5et-W5-cWf"/>
+                                <constraint firstItem="Si6-Z0-f7X" firstAttribute="leading" secondItem="Uqz-ow-xYw" secondAttribute="trailing" constant="9" id="Mvj-wh-XQi"/>
+                                <constraint firstItem="4Hz-7v-EzM" firstAttribute="leading" secondItem="Ylf-Ok-eir" secondAttribute="leading" constant="14" id="VAw-e2-iUm"/>
+                                <constraint firstItem="Si6-Z0-f7X" firstAttribute="top" secondItem="4Hz-7v-EzM" secondAttribute="bottom" constant="8" id="fEI-1U-L20"/>
+                                <constraint firstItem="Uqz-ow-xYw" firstAttribute="leading" secondItem="Ylf-Ok-eir" secondAttribute="leading" constant="17" id="i9a-Pr-NUb"/>
+                                <constraint firstItem="Uqz-ow-xYw" firstAttribute="top" secondItem="4Hz-7v-EzM" secondAttribute="bottom" constant="8" id="pR0-rY-MwM"/>
+                                <constraint firstItem="4Hz-7v-EzM" firstAttribute="top" secondItem="Ylf-Ok-eir" secondAttribute="top" constant="13" id="yrD-zF-Ngu"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Hg-SQ-XVf">
+                            <rect key="frame" x="127" y="0.0" width="80" height="53"/>
+                            <color key="backgroundColor" red="0.90980392160000001" green="0.29411764709999999" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="hjk-Ze-8ug"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="9"/>
+                            <state key="normal" title="BUY POINTS" image="buy"/>
                             <connections>
                                 <action selector="buyPointsButtonTapped:" destination="-1" eventType="touchUpInside" id="pkI-l4-fHf"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aHA-Vm-fiE">
-                            <rect key="frame" x="188" y="0.0" width="94" height="80"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <state key="normal" title="transfer"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aHA-Vm-fiE">
+                            <rect key="frame" x="208" y="0.0" width="83" height="53"/>
+                            <color key="backgroundColor" red="0.90980392160000001" green="0.29411764709999999" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="83" id="PLG-fZ-Eh2"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="9"/>
+                            <state key="normal" title="TRANSFER" image="transfer"/>
                             <connections>
                                 <action selector="transferButtonTapped:" destination="-1" eventType="touchUpInside" id="F2L-vM-LX8"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x7i-EU-0Hl">
-                            <rect key="frame" x="281" y="0.0" width="94" height="80"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <state key="normal" title="send egift"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x7i-EU-0Hl">
+                            <rect key="frame" x="292" y="0.0" width="84" height="53"/>
+                            <color key="backgroundColor" red="0.90980392160000001" green="0.29411764709999999" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="84" id="Q1d-BR-nXy"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="9"/>
+                            <state key="normal" title="SEND EGIFT" image="send_egift"/>
                             <connections>
                                 <action selector="sendEgiftButtonTapped:" destination="-1" eventType="touchUpInside" id="Tt0-Nc-lCo"/>
                             </connections>
@@ -156,8 +207,21 @@
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
+                        <constraint firstAttribute="bottom" secondItem="Ylf-Ok-eir" secondAttribute="bottom" id="6uU-C2-fb1"/>
+                        <constraint firstItem="Ylf-Ok-eir" firstAttribute="top" secondItem="bPe-YU-pQD" secondAttribute="top" id="BPK-IH-opC"/>
                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="DiJ-sV-hfx"/>
+                        <constraint firstItem="7Hg-SQ-XVf" firstAttribute="leading" secondItem="Ylf-Ok-eir" secondAttribute="trailing" constant="1" id="GXi-3Q-vWx"/>
+                        <constraint firstAttribute="bottom" secondItem="aHA-Vm-fiE" secondAttribute="bottom" id="Io6-GJ-Tsi"/>
+                        <constraint firstItem="Ylf-Ok-eir" firstAttribute="leading" secondItem="bPe-YU-pQD" secondAttribute="leading" constant="-1" id="Kn9-DH-UdT"/>
+                        <constraint firstItem="x7i-EU-0Hl" firstAttribute="leading" secondItem="aHA-Vm-fiE" secondAttribute="trailing" constant="1" id="Wd1-rz-XLF"/>
+                        <constraint firstItem="aHA-Vm-fiE" firstAttribute="top" secondItem="bPe-YU-pQD" secondAttribute="top" id="daT-dd-KH6"/>
+                        <constraint firstAttribute="trailing" secondItem="x7i-EU-0Hl" secondAttribute="trailing" constant="-1" id="loC-aR-uWT"/>
+                        <constraint firstAttribute="bottom" secondItem="x7i-EU-0Hl" secondAttribute="bottom" id="nlm-oD-Dtc"/>
+                        <constraint firstAttribute="bottom" secondItem="7Hg-SQ-XVf" secondAttribute="bottom" id="oC7-nf-Jhb"/>
+                        <constraint firstItem="aHA-Vm-fiE" firstAttribute="leading" secondItem="7Hg-SQ-XVf" secondAttribute="trailing" constant="1" id="sU4-ch-1eN"/>
+                        <constraint firstItem="7Hg-SQ-XVf" firstAttribute="top" secondItem="bPe-YU-pQD" secondAttribute="top" id="uTQ-q3-hzD"/>
                         <constraint firstAttribute="height" constant="53" id="weH-N7-Dv7"/>
+                        <constraint firstItem="x7i-EU-0Hl" firstAttribute="top" secondItem="bPe-YU-pQD" secondAttribute="top" id="yfL-3H-DGG"/>
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yBf-pk-PuB">
@@ -187,9 +251,13 @@
     </objects>
     <resources>
         <image name="account_off" width="26" height="26"/>
+        <image name="buy" width="20" height="15"/>
         <image name="discounts_off" width="26" height="26"/>
         <image name="gifts_off" width="26" height="26"/>
         <image name="home_off" width="26" height="26"/>
         <image name="logo" width="124" height="25"/>
+        <image name="send_egift" width="17" height="16"/>
+        <image name="transfer" width="19" height="14"/>
+        <image name="trophy" width="16" height="13"/>
     </resources>
 </document>

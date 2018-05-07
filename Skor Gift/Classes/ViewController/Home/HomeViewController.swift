@@ -13,12 +13,34 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     @IBOutlet var tableView: UITableView!
     @IBOutlet var tableHeaderView: UIView!
     
+    @IBOutlet var buttonTopUp: UIButton!
+    @IBOutlet var buttonEVoucher: UIButton!
+    @IBOutlet var buttonVoucher: UIButton!
+    @IBOutlet var buttonECommerce: UIButton!
+    @IBOutlet var buttonFoodBev: UIButton!
+    @IBOutlet var buttonHealthFit: UIButton!
+    @IBOutlet var buttonLifeStyle: UIButton!
+    @IBOutlet var buttonEssential: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableView.register(UINib(nibName: "VoucherListTableViewCell", bundle: nil), forCellReuseIdentifier: "VoucherListTableViewCell")
         
         tableView.tableHeaderView = tableHeaderView
+        
+        setUI()
+    }
+    
+    func setUI() {
+        buttonTopUp.alignImageAndTitleVertically()
+        buttonEVoucher.alignImageAndTitleVertically()
+        buttonVoucher.alignImageAndTitleVertically()
+        buttonECommerce.alignImageAndTitleVertically()
+        buttonFoodBev.alignImageAndTitleVertically()
+        buttonHealthFit.alignImageAndTitleVertically()
+        buttonLifeStyle.alignImageAndTitleVertically()
+        buttonEssential.alignImageAndTitleVertically()
     }
     
     //MARK: - UITableViewDataSource, UITableViewDelegate
