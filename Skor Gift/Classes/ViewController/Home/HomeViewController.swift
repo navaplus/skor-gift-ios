@@ -27,6 +27,8 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         tableView.register(UINib(nibName: "VoucherListTableViewCell", bundle: nil), forCellReuseIdentifier: "VoucherListTableViewCell")
         
+//        tableHeaderView.frame = CGRect(x: 0, y: 0, width: TheInterfaceManager.deviceWidth(), height: tableHeaderView.frame.size.height)
+        
         tableView.tableHeaderView = tableHeaderView
         
         setUI()

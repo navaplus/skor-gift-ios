@@ -6,64 +6,115 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="VoucherListTableViewCell" customModule="Skor_Gift" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="122"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="99.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="121.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iDX-K1-LQy">
-                        <rect key="frame" x="11" y="11" width="298" height="78"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iDX-K1-LQy">
+                        <rect key="frame" x="10" y="11" width="300" height="100"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QP6-dJ-2vz">
-                                <rect key="frame" x="0.0" y="0.0" width="78" height="78"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="maxresdefault" translatesAutoresizingMaskIntoConstraints="NO" id="QP6-dJ-2vz">
+                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="QP6-dJ-2vz" secondAttribute="height" multiplier="1:1" id="S4r-3K-Nor"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dIn-Zq-O03">
-                                <rect key="frame" x="86" y="8" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dIn-Zq-O03">
+                                <rect key="frame" x="108" y="8" width="192" height="21.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="Wyo-Wv-Wqw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="16"/>
+                                <color key="textColor" red="0.1843137255" green="0.1843137255" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="huf-eW-4y7">
-                                <rect key="frame" x="86" y="38" width="20" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="trophy" translatesAutoresizingMaskIntoConstraints="NO" id="huf-eW-4y7">
+                                <rect key="frame" x="108" y="36" width="16" height="13"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="13" id="bfl-BX-SJ0"/>
+                                    <constraint firstAttribute="width" constant="16" id="rD8-No-OjQ"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KAn-HJ-QTi">
-                                <rect key="frame" x="114" y="37" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KAn-HJ-QTi">
+                                <rect key="frame" x="133" y="33" width="167" height="19"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="19" id="oEO-0V-nL5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                <color key="textColor" red="0.1843137255" green="0.1843137255" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h2L-1z-1B9">
-                                <rect key="frame" x="216" y="48" width="74" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Redeem"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h2L-1z-1B9">
+                                <rect key="frame" x="226" y="70" width="74" height="30"/>
+                                <color key="backgroundColor" red="0.90980392160000001" green="0.29411764709999999" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="clm-93-rgH"/>
+                                    <constraint firstAttribute="width" constant="74" id="ehj-bF-bN6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="12"/>
+                                <state key="normal" title="REDEEM">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="redeemButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="FN0-ZS-6XW"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="QP6-dJ-2vz" firstAttribute="top" secondItem="iDX-K1-LQy" secondAttribute="top" id="0Qt-se-IGt"/>
+                            <constraint firstItem="huf-eW-4y7" firstAttribute="top" secondItem="dIn-Zq-O03" secondAttribute="bottom" constant="6.5" id="0nY-YH-Vp9"/>
+                            <constraint firstItem="KAn-HJ-QTi" firstAttribute="top" secondItem="dIn-Zq-O03" secondAttribute="bottom" constant="3" id="5PB-CV-bPx"/>
+                            <constraint firstItem="dIn-Zq-O03" firstAttribute="top" secondItem="iDX-K1-LQy" secondAttribute="top" constant="8" id="6KP-6j-htm"/>
+                            <constraint firstItem="dIn-Zq-O03" firstAttribute="leading" secondItem="QP6-dJ-2vz" secondAttribute="trailing" constant="8" id="HIA-fv-pa2"/>
+                            <constraint firstAttribute="bottom" secondItem="h2L-1z-1B9" secondAttribute="bottom" id="MgW-wx-2yI"/>
+                            <constraint firstItem="QP6-dJ-2vz" firstAttribute="leading" secondItem="iDX-K1-LQy" secondAttribute="leading" id="St9-Yb-aJr"/>
+                            <constraint firstItem="huf-eW-4y7" firstAttribute="leading" secondItem="QP6-dJ-2vz" secondAttribute="trailing" constant="8" id="fld-jy-4ah"/>
+                            <constraint firstItem="KAn-HJ-QTi" firstAttribute="leading" secondItem="huf-eW-4y7" secondAttribute="trailing" constant="9" id="lyh-ZS-TQm"/>
+                            <constraint firstAttribute="bottom" secondItem="QP6-dJ-2vz" secondAttribute="bottom" id="ouI-OO-iXD"/>
+                            <constraint firstAttribute="trailing" secondItem="dIn-Zq-O03" secondAttribute="trailing" id="oxH-jg-QdM"/>
+                            <constraint firstAttribute="trailing" secondItem="KAn-HJ-QTi" secondAttribute="trailing" id="pB7-HI-Fye"/>
+                            <constraint firstAttribute="trailing" secondItem="h2L-1z-1B9" secondAttribute="trailing" id="usQ-QF-Kz3"/>
+                        </constraints>
                     </view>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="iDX-K1-LQy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="CtP-76-q1C"/>
+                    <constraint firstAttribute="bottom" secondItem="iDX-K1-LQy" secondAttribute="bottom" constant="10.5" id="Hsu-ad-h8L"/>
+                    <constraint firstAttribute="trailing" secondItem="iDX-K1-LQy" secondAttribute="trailing" constant="10" id="njY-ww-m5l"/>
+                    <constraint firstItem="iDX-K1-LQy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="uET-1c-mDH"/>
+                </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="redeemButton" destination="h2L-1z-1B9" id="kIY-2C-jar"/>
+                <outlet property="uiContainerView" destination="iDX-K1-LQy" id="E5A-yY-hdv"/>
                 <outlet property="voucherImageView" destination="QP6-dJ-2vz" id="XNB-QI-gHD"/>
                 <outlet property="voucherPointsLabel" destination="KAn-HJ-QTi" id="CgU-5Q-kaN"/>
                 <outlet property="voucherTitleLabel" destination="dIn-Zq-O03" id="cgG-gk-up4"/>
             </connections>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="maxresdefault" width="1280" height="720"/>
+        <image name="trophy" width="16" height="13"/>
+    </resources>
 </document>

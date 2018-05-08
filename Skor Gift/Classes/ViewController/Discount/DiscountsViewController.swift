@@ -24,12 +24,13 @@ class DiscountsViewController: UIViewController, UITableViewDataSource, UITableV
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 50
+        return 105
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "GiftDiscountTableViewCell", for: indexPath) as! GiftDiscountTableViewCell
         cell.selectionStyle = .default
+        cell.setItem("top_up")
         return cell
     }
     

@@ -9,39 +9,70 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="GiftDiscountTableViewCell" customModule="Skor_Gift" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="90" id="KGk-i7-Jjw" customClass="GiftDiscountTableViewCell" customModule="Skor_Gift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="105"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="49.5"/>
-                <autoresizingMask key="autoresizingMask"/>
+                <rect key="frame" x="0.0" y="0.0" width="375" height="104.5"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AiC-UV-xCE">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="maxresdefault" translatesAutoresizingMaskIntoConstraints="NO" id="AiC-UV-xCE">
+                        <rect key="frame" x="13" y="16" width="350" height="90"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="350" id="Emy-q6-tIR"/>
+                            <constraint firstAttribute="height" constant="90" id="ZB7-0d-fbZ"/>
+                        </constraints>
                     </imageView>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NVI-zS-H50">
-                        <rect key="frame" x="11" y="11" width="28" height="28"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="top_up" translatesAutoresizingMaskIntoConstraints="NO" id="NVI-zS-H50">
+                        <rect key="frame" x="13" y="16" width="64" height="89"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="89" id="PA2-cU-COW"/>
+                            <constraint firstAttribute="width" constant="64" id="nJb-nH-UjM"/>
+                        </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Top Up Voucher" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bZd-dO-xRE">
-                        <rect key="frame" x="47" y="14" width="263" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top Up Voucher" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bZd-dO-xRE">
+                        <rect key="frame" x="85" y="43" width="263" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="UEn-6P-7BB"/>
+                            <constraint firstAttribute="width" constant="263" id="boM-1g-6Pp"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="20"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottom" secondItem="AiC-UV-xCE" secondAttribute="bottom" constant="-0.5" id="MWp-hp-E8e"/>
-                    <constraint firstItem="AiC-UV-xCE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ffY-TE-VfV"/>
-                    <constraint firstAttribute="trailing" secondItem="AiC-UV-xCE" secondAttribute="trailing" id="vnf-sW-Vy1"/>
-                    <constraint firstItem="AiC-UV-xCE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="wzj-NE-klJ"/>
+                    <constraint firstItem="AiC-UV-xCE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="13" id="2dO-od-Ra2"/>
+                    <constraint firstAttribute="bottom" secondItem="bZd-dO-xRE" secondAttribute="bottom" constant="26.5" id="2od-22-oUb"/>
+                    <constraint firstItem="NVI-zS-H50" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="13" id="4re-EE-a3b"/>
+                    <constraint firstItem="bZd-dO-xRE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="43" id="ANK-7B-O7Q"/>
+                    <constraint firstItem="AiC-UV-xCE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="JYB-BP-qPB"/>
+                    <constraint firstAttribute="trailing" secondItem="bZd-dO-xRE" secondAttribute="trailing" constant="27" id="WkF-ZW-V2R"/>
+                    <constraint firstAttribute="bottom" secondItem="NVI-zS-H50" secondAttribute="bottom" constant="-0.5" id="Y1i-jg-n0i"/>
+                    <constraint firstItem="NVI-zS-H50" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="iiO-fP-sA0"/>
+                    <constraint firstAttribute="bottom" secondItem="AiC-UV-xCE" secondAttribute="bottom" constant="-1.5" id="rlE-9g-Mh8"/>
+                    <constraint firstItem="bZd-dO-xRE" firstAttribute="leading" secondItem="NVI-zS-H50" secondAttribute="trailing" constant="8" id="t5l-hl-LbK"/>
+                    <constraint firstAttribute="trailing" secondItem="AiC-UV-xCE" secondAttribute="trailing" constant="12" id="t7a-cp-Tdi"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="backgroundImageView" destination="AiC-UV-xCE" id="udL-C5-SqK"/>
+                <outlet property="iconImageView" destination="NVI-zS-H50" id="tAd-G7-U8P"/>
+            </connections>
+            <point key="canvasLocation" x="34.5" y="122.5"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="maxresdefault" width="1280" height="720"/>
+        <image name="top_up" width="22" height="37"/>
+    </resources>
 </document>

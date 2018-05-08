@@ -24,26 +24,20 @@ class GiftsViewController: UIViewController, UITableViewDataSource, UITableViewD
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 50
+        return 105
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "GiftDiscountTableViewCell", for: indexPath) as! GiftDiscountTableViewCell
+        cell.setItem("top_up")
         cell.selectionStyle = .default
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if indexPath.row == 0 {
-            
-        } else if indexPath.row == 1 {
-            
-        } else if indexPath.row == 2 {
-            let vc = VouchersViewController()
-            self.navigationController?.pushViewController(vc, animated: true)
-        } else if indexPath.row == 3 {
-            
-        }
+        let vc = VouchersViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
+        
         tableView.deselectRow(at: indexPath, animated: true)
     }
 }
