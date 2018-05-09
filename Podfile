@@ -9,6 +9,8 @@ target 'Skor Gift' do
 pod 'EAIntroView', '~> 2.10.0'
 pod 'PagingMenuController'
 pod 'SnapKit', '~> 4.0.0'
+pod 'Firebase/Core'
+pod 'Firebase/Messaging'
 
 post_install do |installer|
     installer.pods_project.targets.each do |target|

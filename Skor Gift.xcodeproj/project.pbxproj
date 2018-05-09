@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		042B9D6720A28D0D00258193 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 042B9D6620A28D0D00258193 /* GoogleService-Info.plist */; };
+		042B9D6820A28D0D00258193 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 042B9D6620A28D0D00258193 /* GoogleService-Info.plist */; };
+		042B9D6920A28D0D00258193 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 042B9D6620A28D0D00258193 /* GoogleService-Info.plist */; };
 		3C3E0464D06086D8E5FDB0F7 /* Pods_Skor_Gift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B2ADAA636A01DC7F14D39EE /* Pods_Skor_Gift.framework */; };
 		E01DD9432099AA60001C9116 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01DD9422099AA60001C9116 /* AppDelegate.swift */; };
 		E01DD9452099AA60001C9116 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01DD9442099AA60001C9116 /* ViewController.swift */; };
@@ -96,6 +99,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		042B9D6620A28D0D00258193 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0E60E8B582E061A5AB8666BF /* Pods-Skor Gift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Skor Gift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Skor Gift/Pods-Skor Gift.debug.xcconfig"; sourceTree = "<group>"; };
 		4AF7166BC08A68AE035BB4F3 /* Pods-Skor Gift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Skor Gift.release.xcconfig"; path = "Pods/Target Support Files/Pods-Skor Gift/Pods-Skor Gift.release.xcconfig"; sourceTree = "<group>"; };
 		7B2ADAA636A01DC7F14D39EE /* Pods_Skor_Gift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Skor_Gift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -249,6 +253,7 @@
 				E072EBF220A0106800E5F16D /* Resources */,
 				E0A4FB7A209AC2C600AB45EB /* Classes */,
 				E01DD9492099AA60001C9116 /* Assets.xcassets */,
+				042B9D6620A28D0D00258193 /* GoogleService-Info.plist */,
 				E01DD94E2099AA60001C9116 /* Info.plist */,
 			);
 			path = "Skor Gift";
@@ -484,6 +489,7 @@
 				E01DD93C2099AA60001C9116 /* Frameworks */,
 				E01DD93D2099AA60001C9116 /* Resources */,
 				DB365785739EF1E907A05D06 /* [CP] Embed Pods Frameworks */,
+				6BA59EEBDE0FDF9DD013DC27 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -605,6 +611,7 @@
 				E0F4A9532099BBB200B8C102 /* MainViewController.xib in Resources */,
 				E0F4A96D2099C2F700B8C102 /* GiftsViewController.xib in Resources */,
 				E01DD94D2099AA60001C9116 /* LaunchScreen.storyboard in Resources */,
+				042B9D6720A28D0D00258193 /* GoogleService-Info.plist in Resources */,
 				E072EC1820A0108600E5F16D /* Roboto-LightItalic.ttf in Resources */,
 				E072EC0A20A0108500E5F16D /* Roboto-Light.ttf in Resources */,
 				E01DD94A2099AA60001C9116 /* Assets.xcassets in Resources */,
@@ -638,6 +645,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				042B9D6820A28D0D00258193 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -645,6 +653,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				042B9D6920A28D0D00258193 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -669,6 +678,21 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		6BA59EEBDE0FDF9DD013DC27 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Skor Gift/Pods-Skor Gift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		DB365785739EF1E907A05D06 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -678,15 +702,21 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Skor Gift/Pods-Skor Gift-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/EAIntroView/EAIntroView.framework",
 				"${BUILT_PRODUCTS_DIR}/EARestrictedScrollView/EARestrictedScrollView.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/PagingMenuController/PagingMenuController.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EAIntroView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EARestrictedScrollView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PagingMenuController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
